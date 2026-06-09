@@ -2,3 +2,4 @@ qa_screenshots/
 AI_TOOL_KSV_web_deploy.zip
 *.pptx
 *.log
+extract.py
