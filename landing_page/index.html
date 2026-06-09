@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bản đồ công cụ AI Marketing 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="topbar" aria-label="Điều hướng chính">
+            <a class="brand-mark" href="#hero" aria-label="AI Marketing Radar">
+                <span class="brand-symbol">AI</span>
+                <span>
+                    <strong>Bản đồ AI Marketing</strong>
+                    <small>Cập nhật 04/06/2026</small>
+                </span>
+            </a>
+            <nav class="nav-links" aria-label="Các phần trong bài trình chiếu">
+                <a class="nav-link" href="ai-intro/">AI là gì</a>
+                <button class="nav-link" data-scroll="finder">Bộ lọc AI</button>
+                <button class="nav-link" data-scroll="value">Chi phí</button>
+                <button class="nav-link" data-scroll="library">Danh mục</button>
+                <button class="nav-link" data-scroll="compare">So sánh 1-1</button>
+                <button class="nav-link" data-scroll="matrix">Chọn bộ công cụ</button>
+                <button class="nav-link" data-scroll="table">Bảng điểm</button>
+            </nav>
+            <button id="presentationToggle" class="mode-toggle" type="button">Trình chiếu</button>
+        </header>
+
+        <main>
+            <section id="hero" class="hero section-reveal">
+                <div class="hero-copy">
+                    <p class="eyebrow">Bản đồ AI cho marketing, quảng cáo và video</p>
+                    <h1>So sánh nhanh, nhìn sâu, chọn đúng công cụ AI cho từng mục tiêu.</h1>
+                    <p class="hero-lead">
+                        Trang này gom các nhóm AI đang được dùng nhiều trong marketing: mô hình nền tảng,
+                        công cụ tạo video, avatar có người nói, viết nội dung, thiết kế quảng cáo và vận hành mạng xã hội.
+                    </p>
+                    <div class="hero-actions">
+                        <button class="primary-action" data-scroll="finder" type="button">Tìm AI theo công việc</button>
+                        <button class="secondary-action" data-scroll="compare" type="button">Mở bảng so sánh</button>
+                    </div>
+                </div>
+                <div class="hero-board" aria-label="Tóm tắt thị trường AI marketing">
+                    <div class="signal-card signal-card-wide">
+                        <span class="signal-label">Tín hiệu lớn</span>
+                        <strong>Video AI tách thành 3 nhánh</strong>
+                        <p>Video điện ảnh, avatar có người nói và video chỉnh sửa bằng hội thoại đang dùng bộ công cụ khác nhau.</p>
+                    </div>
+                    <div class="signal-card">
+                        <span class="signal-label">27</span>
+                        <p>Công cụ và mô hình được đưa vào thư viện so sánh.</p>
+                    </div>
+                    <div class="signal-card">
+                        <span class="signal-label">12</span>
+                        <p>Tiêu chí chấm điểm cho từng công cụ.</p>
+                    </div>
+                    <div class="signal-card">
+                        <span class="signal-label">27/27</span>
+                        <p>Công cụ đều có ảnh hoặc video web đúng nguồn để xem nhanh mà không phải tải clip nặng.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="finder" class="section-block finder-section section-reveal">
+                <div class="section-heading split-heading">
+                    <div>
+                        <p class="eyebrow">Bộ lọc AI</p>
+                        <h2>Lọc AI theo ngành, vị trí và việc cần làm</h2>
+                    </div>
+                    <p>
+                        Dành cho người không biết bắt đầu từ công cụ nào: nhân viên văn phòng cần làm báo cáo,
+                        marketing cần sản xuất video, nhân sự cần đào tạo nội bộ, bán hàng cần video cá nhân hóa.
+                    </p>
+                </div>
+
+                <div class="finder-shell">
+                    <div class="finder-panel">
+                        <div class="finder-controls" aria-label="Bộ lọc nhu cầu sử dụng AI">
+                            <label>
+                                <span>Ngành / bối cảnh</span>
+                                <select id="finderIndustry"></select>
+                            </label>
+                            <label>
+                                <span>Vị trí</span>
+                                <select id="finderRole"></select>
+                            </label>
+                            <label>
+                                <span>Việc cần làm</span>
+                                <select id="finderTask"></select>
+                            </label>
+                        </div>
+                        <div class="finder-controls finder-cost-controls" aria-label="Bộ lọc ngân sách AI">
+                            <label>
+                                <span>Ngân sách / tháng</span>
+                                <select id="finderBudget"></select>
+                            </label>
+                            <label>
+                                <span>Ưu tiên giá</span>
+                                <select id="finderValueMode"></select>
+                            </label>
+                        </div>
+                        <label class="finder-brief">
+                            <span>Mô tả nhanh công việc của bạn</span>
+                            <textarea id="finderBrief" rows="4" placeholder="Ví dụ: Tôi là nhân sự, cần tạo video onboarding cho nhân viên mới và một email thông báo nội bộ."></textarea>
+                        </label>
+                        <div class="finder-actions">
+                            <button id="finderRun" class="primary-action" type="button">Lọc AI phù hợp</button>
+                            <button id="finderReset" class="secondary-action" type="button">Reset</button>
+                        </div>
+                    </div>
+
+                    <aside class="finder-summary" aria-live="polite">
+                        <p class="eyebrow">Kết quả nhanh</p>
+                        <h3 id="finderSummaryTitle">Chọn nhu cầu để nhận bộ công cụ AI đề xuất</h3>
+                        <p id="finderSummaryCopy">Hệ thống sẽ ưu tiên công cụ theo vai trò, nhiệm vụ, độ dễ dùng, tốc độ triển khai và bằng chứng nguồn chính thức.</p>
+                        <div id="finderStack" class="finder-stack"></div>
+                    </aside>
+                </div>
+
+                <div id="finderResults" class="finder-results"></div>
+            </section>
+
+            <section id="value" class="section-block value-section section-reveal">
+                <div class="section-heading split-heading">
+                    <div>
+                        <p class="eyebrow">Tối ưu chi phí</p>
+                        <h2>Tối ưu giá: ngon, bổ, rẻ theo đúng nhu cầu</h2>
+                    </div>
+                    <p>
+                        Phần này tách riêng điểm giá khỏi điểm chất lượng. Một công cụ rẻ chưa chắc đáng mua nếu tốn điểm sử dụng nhanh,
+                        và một công cụ đắt vẫn hợp lý nếu nó thay được nhiều bước vận hành.
+                    </p>
+                </div>
+                <div class="value-shell">
+                    <div class="value-controls" aria-label="Bộ lọc tối ưu chi phí">
+                        <label>
+                            <span>Mục tiêu</span>
+                            <select id="valueUseCase"></select>
+                        </label>
+                        <label>
+                            <span>Ngân sách</span>
+                            <select id="valueBudget"></select>
+                        </label>
+                        <label>
+                            <span>Ưu tiên</span>
+                            <select id="valueStrategy"></select>
+                        </label>
+                    </div>
+                    <aside class="value-summary">
+                        <p class="eyebrow">Khuyến nghị nhanh</p>
+                        <h3 id="valueSummaryTitle">Đang tính lựa chọn đáng tiền nhất</h3>
+                        <p id="valueSummaryCopy">Điểm đáng tiền kết hợp độ phù hợp công việc, giá thực tế, gói miễn phí, rủi ro điểm sử dụng và độ rõ của nguồn giá.</p>
+                    </aside>
+                </div>
+                <div id="valueResults" class="value-results"></div>
+            </section>
+
+            <section id="overview" class="section-block section-reveal">
+                <div class="section-heading">
+                    <p class="eyebrow">Bản đồ tổng quan</p>
+                    <h2>Bức tranh nhanh để mở bài thuyết trình</h2>
+                    <p>Mỗi nhóm nên được đánh giá theo mục tiêu kinh doanh, không chỉ theo chất lượng demo.</p>
+                </div>
+                <div id="insightGrid" class="insight-grid"></div>
+            </section>
+
+            <section id="library" class="section-block section-reveal">
+                <div class="section-heading split-heading">
+                    <div>
+                        <p class="eyebrow">Thư viện công cụ</p>
+                        <h2>Thư viện AI tools hiện tại</h2>
+                    </div>
+                    <p>
+                        Lọc theo nhóm, tìm theo tên hoặc tình huống sử dụng. Bấm vào thẻ để mở phân tích chi tiết,
+                        quy trình gợi ý và điểm cần tránh.
+                    </p>
+                </div>
+                <div class="controls-panel" aria-label="Bộ lọc công cụ">
+                    <div id="categoryFilters" class="segmented-control"></div>
+                    <label class="search-box">
+                        <span>Tìm</span>
+                        <input id="toolSearch" type="search" placeholder="Nhập HeyGen, video, quảng cáo...">
+                    </label>
+                </div>
+                <div id="toolGrid" class="tool-grid"></div>
+            </section>
+
+            <section id="compare" class="section-block section-reveal">
+                <div class="section-heading split-heading">
+                    <div>
+                        <p class="eyebrow">So sánh trực tiếp</p>
+                        <h2>Đặt hai công cụ lên bàn cân</h2>
+                    </div>
+                    <p>
+                        Phần này hữu ích khi bạn cần trả lời câu hỏi: dùng con nào cho task cụ thể,
+                        con nào chỉ đẹp demo nhưng không hợp vận hành.
+                    </p>
+                </div>
+                <div class="compare-controls" aria-label="Chọn công cụ để so sánh">
+                    <label>
+                        <span>Công cụ A</span>
+                        <select id="compareA"></select>
+                    </label>
+                    <div class="versus-pill">VS</div>
+                    <label>
+                        <span>Công cụ B</span>
+                        <select id="compareB"></select>
+                    </label>
+                </div>
+                <div id="compareResult" class="compare-result"></div>
+            </section>
+
+            <section id="matrix" class="section-block section-reveal">
+                <div class="section-heading">
+                    <p class="eyebrow">Ma trận quyết định</p>
+                    <h2>Chọn bộ công cụ theo mục tiêu marketing</h2>
+                    <p>Không có một công cụ thắng tất cả. Bộ công cụ tốt là bộ có vai trò rõ ràng và ít chồng chéo.</p>
+                </div>
+                <div id="useCaseGrid" class="usecase-grid"></div>
+                <div id="stackGrid" class="stack-grid"></div>
+            </section>
+
+            <section id="table" class="section-block section-reveal">
+                <div class="section-heading split-heading">
+                    <div>
+                        <p class="eyebrow">Bảng điểm</p>
+                        <h2>Bảng điểm tổng hợp</h2>
+                    </div>
+                    <p>Bấm vào tiêu đề cột để sắp xếp. Điểm là đánh giá thực dụng cho marketing, không phải benchmark kỹ thuật.</p>
+                </div>
+                <div class="table-wrap">
+                    <table class="score-table">
+                        <thead id="scoreTableHead"></thead>
+                        <tbody id="scoreTableBody"></tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="sources" class="section-block section-reveal">
+                <div class="section-heading split-heading">
+                    <div>
+                        <p class="eyebrow">Nguồn tham khảo</p>
+                        <h2>Nguồn và lưu ý cập nhật</h2>
+                    </div>
+                    <p>
+                        Giá và giới hạn credit thay đổi nhanh. Khi dùng để chốt ngân sách thật,
+                        hãy mở link nguồn trước khi trình bày số tiền cuối cùng.
+                    </p>
+                </div>
+                <div id="sourceList" class="source-list"></div>
+            </section>
+        </main>
+
+        <footer class="page-footer">
+            <span>AI Marketing Tools 2026</span>
+            <span>Bản tương tác dùng cho thuyết trình</span>
+        </footer>
+    </div>
+
+    <div id="toolModal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-backdrop" data-close-modal></div>
+        <article class="modal-panel">
+            <button class="modal-close" type="button" data-close-modal aria-label="Đóng">×</button>
+            <div id="modalContent"></div>
+        </article>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
