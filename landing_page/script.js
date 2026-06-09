@@ -199,10 +199,10 @@ const tools = [
         summary: "Trợ lý tổng quát mạnh cho chiến lược marketing, phân tích dữ liệu, viết brief, tạo copy và hỗ trợ hình ảnh. Không thay thế tool chuyên dụng cho scheduling hoặc ad scoring.",
         currentNote: "Trang giá hiện tại liệt kê các tầng Free, Go, Plus, Pro, Business và Enterprise, với model GPT-5.5 Instant/Thinking/Pro theo từng plan.",        demoSource: "https://www.youtube.com/watch?v=Wgn4JeYI9lY",
         metrics: { video: 2, avatar: 1, copy: 5, ad: 4, social: 3, automation: 4, control: 4, ease: 5, speed: 5, vietnamese: 5, safety: 4, costClarity: 3 },
-        pros: ["Rất mạnh ở phân tích chiến dịch, insight khách hàng và biến một brief thành nhiều phiên bản copy.", "Có thể dùng làm bộ não điều phối trước khi đẩy sang Canva, Runway, Buffer hoặc AdCreative.", "Phù hợp thuyết trình vì giải thích được logic lựa chọn công cụ."],
+        pros: ["Rất mạnh ở phân tích chiến dịch, insight khách hàng và biến một brief thành nhiều phiên bản copy.", "Có thể dùng làm bộ não điều phối trước khi đẩy sang Canva, Runway, Buffer hoặc AdCreative.", "Phù hợp thuyết trình vì trình bày được logic lựa chọn công cụ."],
         cons: ["Không có sẵn hệ thống calendar, publishing, creative scoring chuyên sâu.", "Cần quy trình review để tránh output nghe chung chung.", "Giới hạn plan và model thay đổi nhanh."],
         workflow: ["Tạo positioning và message house.", "Sinh 20 hook quảng cáo cho từng persona.", "Tóm tắt dữ liệu campaign thành insight trình bày."],
-        avoid: "Không dùng một mình để xuất bản hàng loạt nếu team chưa có bước kiểm duyệt brand và pháp lý.",
+        avoid: "Không dùng độc lập để xuất bản hàng loạt nếu team chưa có bước kiểm duyệt brand và pháp lý.",
         verdict: "Dùng làm trung tâm tư duy và viết nháp. Kết hợp với tool chuyên dụng để sản xuất asset và vận hành."
     },
     {
@@ -248,7 +248,7 @@ const tools = [
         cons: ["Không phải tool video/avatar/creative chuyên dụng.", "Free chat và API là hai kênh khác nhau, cần kiểm quota/checkout trước khi scale.", "Nên ghi rõ đang nói về Kimi K2.6 vì các model K2 cũ đã bị ngừng hỗ trợ."],
         workflow: ["Đưa tài liệu dài, guideline hoặc research note vào để tóm tắt và rút insight.", "Sinh SOP, checklist, prompt agent hoặc phân tích code/workflow.", "Dùng Perplexity/nguồn chính thức để kiểm claim trước khi đưa vào slide."],
         avoid: "Không dùng tên Kimi K2 cũ trong slide khuyến nghị mua mới; dùng Kimi K2.6 theo docs hiện tại.",
-        verdict: "Rất đáng thêm vào nhóm ngon bổ rẻ/free-value cho tài liệu dài, coding, agent task và nghiên cứu có khối lượng lớn."
+        verdict: "Rất đáng thêm vào nhóm hiệu quả chi phí/free-value cho tài liệu dài, coding, agent task và nghiên cứu có khối lượng lớn."
     },
     {
         id: "grok",
@@ -269,7 +269,7 @@ const tools = [
         pros: ["Rất hợp social listening nhẹ, trend X và phản ứng nhanh với tin mới.", "Free tier đủ để thử trước khi mua SuperGrok.", "Có lợi thế khi campaign cần góc nhìn đang diễn ra ngoài thị trường."],
         cons: ["Không thay thế planner có kiểm chứng nguồn cho báo cáo quan trọng.", "Video/image generation nằm ở gói cao hơn và cần xem giới hạn thật trong app.", "Tone có thể sắc, cần biên tập lại nếu dùng cho brand an toàn."],
         workflow: ["Tìm trend và pain point đang được bàn luận.", "Sinh hook, caption, angle ads theo từng persona.", "Đưa output qua ChatGPT/Claude để chỉnh brand voice trước khi xuất bản."],
-        avoid: "Không dùng một mình cho claim nhạy cảm về pháp lý, tài chính, y tế hoặc số liệu chưa kiểm chứng.",
+        avoid: "Không dùng độc lập cho claim nhạy cảm về pháp lý, tài chính, y tế hoặc số liệu chưa kiểm chứng.",
         verdict: "Đáng thêm vào stack free-value cho social marketing vì mạnh ở trend và tốc độ, nhưng cần lớp kiểm chứng nguồn trước khi trình bày."
     },
     {
@@ -278,21 +278,21 @@ const tools = [
         category: "core",
         group: "Model nền tảng",
         accent: "#46d9c7",
-        price: "Free chat / API rất rẻ",
+        price: "Free chat / API chi phí thấp",
         priceMonthly: 0,
         status: "active",
         url: "https://chat.deepseek.com/",
         source: "DeepSeek pricing",
-        bestFor: "Reasoning rẻ, code, phân tích tài liệu, nháp content dài",
+        bestFor: "Reasoning chi phí thấp, code, phân tích tài liệu, nháp content dài",
         audience: "Office, analyst, developer, marketer tiết kiệm",
         summary: "DeepSeek là lựa chọn rất đáng thử khi ưu tiên miễn phí hoặc chi phí thấp cho lập luận, tóm tắt, viết nháp, phân tích bảng dữ liệu và hỗ trợ code/workflow.",
         currentNote: "DeepSeek API docs đang liệt kê DeepSeek-V4-Flash và V4-Pro, context 1M, output tối đa 384K, với giá API thấp theo 1M tokens.",        demoSource: "https://www.youtube.com/watch?v=ExhKoFKEvh8",
         metrics: { video: 1, avatar: 1, copy: 5, ad: 3, social: 3, automation: 4, control: 4, ease: 4, speed: 4, vietnamese: 4, safety: 3, costClarity: 5 },
-        pros: ["Value rất tốt nếu cần suy luận, tóm tắt và code với chi phí thấp.", "Hợp người mới vì có thể thử chat trước khi tính API.", "Rất mạnh để dựng outline, checklist, SOP và prompt kỹ thuật."],
+        pros: ["Value rất tốt nếu cần suy luận, tóm tắt và code với chi phí thấp.", "Dễ thử nghiệm bằng bản chat trước khi tính phương án API.", "Rất mạnh để dựng outline, checklist, SOP và prompt kỹ thuật."],
         cons: ["Không phải tool video, avatar hay thiết kế quảng cáo.", "Cần kiểm nguồn khi dùng cho báo cáo thị trường.", "Một số môi trường doanh nghiệp có thể cần xét lại chính sách dữ liệu."],
         workflow: ["Dùng để phân rã yêu cầu thành checklist và logic.", "Viết nháp báo cáo, SOP, email, script rồi đưa qua tool thiết kế/video.", "Dùng API cho batch nội dung nếu cần tiết kiệm hơn các model premium."],
         avoid: "Không dùng làm nguồn duy nhất cho claim factual quan trọng nếu chưa đối chiếu với tài liệu gốc.",
-        verdict: "Một trong các lựa chọn ngon bổ rẻ nhất cho office, phân tích và automation nhẹ; nên nằm cao trong filter free-value."
+        verdict: "Một trong các lựa chọn hiệu quả chi phí nhất cho office, phân tích và automation nhẹ; nên nằm cao trong filter free-value."
     },
     {
         id: "qwen",
@@ -300,7 +300,7 @@ const tools = [
         category: "core",
         group: "Model nền tảng",
         accent: "#f2c14e",
-        price: "Free quota / API rẻ",
+        price: "Free quota / API chi phí thấp",
         priceMonthly: 0,
         status: "active",
         url: "https://chat.qwen.ai/",
@@ -314,7 +314,7 @@ const tools = [
         cons: ["Free quota có điều kiện theo region/deployment, cần kiểm lại trước khi demo thật.", "Không phải công cụ marketing end-to-end.", "Tên model và plan trong Model Studio thay đổi nhanh."],
         workflow: ["Dùng để tóm tắt, dịch, chuẩn hóa nội dung đa ngôn ngữ.", "Sinh prompt hoặc nội dung batch cho e-commerce/social.", "Nếu dùng API, chọn Flash trước để tối ưu chi phí."],
         avoid: "Không chốt ngân sách API nếu chưa xác nhận region, free quota và deployment mode.",
-        verdict: "Rất đáng có trong nhóm ngon bổ rẻ cho team cần đa ngôn ngữ, tài liệu dài và chi phí thấp."
+        verdict: "Rất đáng có trong nhóm hiệu quả chi phí cho team cần đa ngôn ngữ, tài liệu dài và chi phí thấp."
     },
     {
         id: "copilot",
@@ -333,7 +333,7 @@ const tools = [
         summary: "Copilot rất thực dụng cho người dùng Microsoft 365: hỏi đáp, tóm tắt, soạn văn bản, bảng tính, slide, email và tạo ảnh/video nhẹ trong hệ Microsoft.",
         currentNote: "Microsoft Store ghi Microsoft 365 Premium $19.99/month, có productivity apps with Microsoft Copilot, extensive usage cho một số Copilot features và Designer/Clipchamp.",        demoSource: "https://www.youtube.com/watch?v=Ai4zozXuV4s",
         metrics: { video: 1, avatar: 1, copy: 4, ad: 3, social: 2, automation: 4, control: 4, ease: 5, speed: 4, vietnamese: 4, safety: 4, costClarity: 4 },
-        pros: ["Ngon bổ rẻ nếu công ty đã dùng Word, Excel, PowerPoint, Outlook.", "Rất hợp báo cáo, slide, email, tóm tắt file và thao tác văn phòng lặp lại.", "Ít phải học tool mới vì nằm trong hệ Microsoft quen thuộc."],
+        pros: ["Hiệu quả chi phí nếu công ty đã dùng Word, Excel, PowerPoint, Outlook.", "Rất hợp báo cáo, slide, email, tóm tắt file và thao tác văn phòng lặp lại.", "Ít phải học tool mới vì nằm trong hệ Microsoft quen thuộc."],
         cons: ["Không mạnh bằng tool chuyên video/ad creative.", "Giá trị phụ thuộc việc người dùng có Microsoft 365 và file nằm đúng hệ sinh thái.", "Một số tính năng AI có giới hạn usage và region."],
         workflow: ["Tóm tắt tài liệu/email thành brief hành động.", "Biến dữ liệu Excel thành insight và slide.", "Dùng ChatGPT/Claude/DeepSeek để phản biện thêm nếu cần góc nhìn ngoài Microsoft."],
         avoid: "Không chọn làm công cụ chính nếu team không dùng Microsoft 365 hoặc cần video/social scheduling chuyên sâu.",
@@ -377,11 +377,11 @@ const tools = [
         summary: "Mistral Le Chat là lựa chọn free-value tốt cho trợ lý cá nhân, phân tích tài liệu, tìm kiếm web, tạo nội dung và workflow nhẹ, đặc biệt khi muốn thêm một model nền tảng ngoài Mỹ.",
         currentNote: "Trang Mistral Pricing ghi Free plan có web/mobile access, SOTA models, limited messages và web searches; Pro ở mức $14.99/month.",        demoSource: "https://www.youtube.com/watch?v=YxYbSnzcVSM",
         metrics: { video: 1, avatar: 1, copy: 4, ad: 3, social: 3, automation: 4, control: 4, ease: 4, speed: 5, vietnamese: 4, safety: 4, costClarity: 4 },
-        pros: ["Free plan đủ tốt để thử như trợ lý đa năng.", "Pro rẻ hơn nhóm $20/month phổ biến.", "Hợp research nhẹ, văn bản, tài liệu và workflow/coding cá nhân."],
+        pros: ["Free plan đủ tốt để thử như trợ lý đa năng.", "Pro có chi phí thấp hơn nhóm $20/month phổ biến.", "Hợp research nhẹ, văn bản, tài liệu và workflow/coding cá nhân."],
         cons: ["Không phải tool marketing chuyên sâu hoặc video generation.", "Free plan có giới hạn message/search.", "Ở Việt Nam vẫn cần test chất lượng tiếng Việt theo từng task cụ thể."],
         workflow: ["Dùng làm trợ lý nháp và phân tích tài liệu nhanh.", "Tạo checklist, outline, email, SOP hoặc prompt cho tool khác.", "So sánh output với ChatGPT/Claude/DeepSeek để chọn bản tốt nhất."],
         avoid: "Không dùng thay thế Perplexity khi yêu cầu chính là citation/research có nguồn rõ.",
-        verdict: "Một lựa chọn ngon bổ rẻ đáng đưa vào danh sách vì có free plan và Pro dưới $15/tháng."
+        verdict: "Một lựa chọn hiệu quả chi phí đáng đưa vào danh sách vì có free plan và Pro dưới $15/tháng."
     },
     {
         id: "gemini",
@@ -444,7 +444,7 @@ const tools = [
         currentNote: "Kling 3.0 tính phí theo credit/giây, có mode native audio, no native audio và voice control.",        demoSource: "https://www.youtube.com/watch?v=ZqxP616nvIE",
         metrics: { video: 5, avatar: 3, copy: 1, ad: 4, social: 5, automation: 3, control: 4, ease: 3, speed: 3, vietnamese: 2, safety: 3, costClarity: 3 },
         pros: ["Chuyển động người và sản phẩm nhìn tự nhiên.", "Multi-shot giúp một prompt tạo được nhịp dựng phim hơn.", "Tốt cho TikTok, Reels, fashion và lifestyle ads."],
-        cons: ["Không phải avatar presenter kiểu HeyGen.", "Credit theo giây cần kiểm soát chặt khi test.", "Giao diện và tài liệu có thể khó hơn cho người mới."],
+        cons: ["Không phải avatar presenter kiểu HeyGen.", "Credit theo giây cần kiểm soát chặt khi test.", "Giao diện và tài liệu có thể cần thời gian làm quen."],
         workflow: ["Dùng ảnh sản phẩm hoặc người mẫu làm reference.", "Tạo 3-15 giây video với prompt shot-by-shot.", "Dựng lại thành ad ngắn trong CapCut hoặc Premiere."],
         avoid: "Không chọn nếu cần khóa brand safety theo tiêu chuẩn enterprise ngay từ đầu.",
         verdict: "Rất đáng so sánh với Runway cho social và fashion vì chất lượng motion tốt trên clip ngắn."
@@ -509,7 +509,7 @@ const tools = [
         summary: "Synthesia phù hợp doanh nghiệp cần video training, hướng dẫn sản phẩm và nội dung nội bộ có avatar ổn định, template rõ, nhiều ngôn ngữ.",
         currentNote: "Trang giá Synthesia hiển thị Basic miễn phí, Starter, Creator và Enterprise, kèm hệ thống credit dùng cho video/dubbing.",        demoSource: "https://www.youtube.com/watch?v=G-7jbNPQ0TQ",
         metrics: { video: 4, avatar: 5, copy: 2, ad: 2, social: 2, automation: 3, control: 3, ease: 5, speed: 5, vietnamese: 4, safety: 5, costClarity: 4 },
-        pros: ["Rất hợp training và video giải thích nghiêm túc.", "Giao diện dễ cho non-designer.", "Enterprise có các yếu tố bảo mật, API, LMS/SCORM tùy plan."],
+        pros: ["Rất hợp training và video đào tạo nghiêm túc.", "Giao diện dễ cho non-designer.", "Enterprise có các yếu tố bảo mật, API, LMS/SCORM tùy plan."],
         cons: ["Avatar có thể corporate và ít cảm xúc hơn HeyGen.", "Không hợp TVC cinematic.", "Chi phí lên Creator/Enterprise cần tính theo volume video."],
         workflow: ["Chuyển SOP hoặc slide training thành video.", "Tạo phiên bản đa ngôn ngữ cho team quốc tế.", "Nhúng vào LMS hoặc knowledge base."],
         avoid: "Không chọn nếu brand cần UGC tự nhiên kiểu TikTok.",
@@ -553,7 +553,7 @@ const tools = [
         summary: "Sora từng là ví dụ mạnh cho text-to-video và storyboard, nhưng nguồn OpenAI hiện ghi sản phẩm Sora không còn khả dụng từ 26/04/2026.",
         currentNote: "Không nên đề xuất Sora như stack mới cho khách hàng nếu cần công cụ dùng ngay.",        demoSource: "https://www.youtube.com/watch?v=1PaoWKvcJP0",
         metrics: { video: 4, avatar: 1, copy: 3, ad: 3, social: 2, automation: 1, control: 3, ease: 1, speed: 1, vietnamese: 2, safety: 4, costClarity: 1 },
-        pros: ["Có giá trị minh họa lịch sử phát triển video AI.", "Demos cũ vẫn giúp giải thích world simulation.", "Tạo điểm thảo luận về rủi ro phụ thuộc nền tảng."],
+        pros: ["Có giá trị minh họa lịch sử phát triển video AI.", "Demos cũ vẫn giúp minh họa khả năng mô phỏng thế giới.", "Tạo điểm thảo luận về rủi ro phụ thuộc nền tảng."],
         cons: ["Không còn khả dụng như sản phẩm consumer theo nguồn OpenAI.", "Không phù hợp đưa vào stack vận hành mới.", "Tài liệu cũ dễ gây nhầm nếu không ghi ngày."],
         workflow: ["Dùng trong slide 'điều gì thay đổi trong 2026'.", "So sánh vì sao Gemini Omni, Runway, Kling đang thay thế vai trò này.", "Nêu rủi ro platform shutdown khi chọn tool."],
         avoid: "Không dùng để cam kết production pipeline mới.",
@@ -598,9 +598,9 @@ const tools = [
         currentNote: "Adobe ghi Firefly Standard US$9.99/mo, Pro US$19.99/mo và Pro Plus cao hơn, có generative credits cho image, video, audio.",        demoSource: "https://www.youtube.com/watch?v=3VYpWxokxps",
         metrics: { video: 3, avatar: 1, copy: 1, ad: 5, social: 4, automation: 3, control: 5, ease: 3, speed: 4, vietnamese: 2, safety: 5, costClarity: 4 },
         pros: ["An toàn thương mại tốt hơn cho brand lớn.", "Tích hợp sâu Adobe nên hợp designer chuyên nghiệp.", "Generative Fill và chỉnh ảnh sản phẩm rất mạnh."],
-        cons: ["Không rẻ nếu team chưa dùng Adobe.", "Cần kỹ năng thiết kế để ra output tốt.", "Không phải scheduler hay copy workflow."],
+        cons: ["Không tối ưu chi phí nếu team chưa dùng Adobe.", "Cần kỹ năng thiết kế để ra output tốt.", "Không phải scheduler hay copy workflow."],
         workflow: ["Tạo ảnh nền sản phẩm và retouch.", "Dùng Photoshop/Firefly để chỉnh compositing.", "Xuất asset sang Canva hoặc ad platform."],
-        avoid: "Không chọn cho team non-designer cần template nhanh và rẻ.",
+        avoid: "Không chọn cho team non-designer cần template nhanh và chi phí thấp.",
         verdict: "Chọn khi brand cần chất lượng, quyền thương mại và kiểm soát thiết kế cao."
     },
     {
@@ -644,7 +644,7 @@ const tools = [
         pros: ["Tập trung đúng bài toán performance ad creative.", "Có creative insight và competitor insight.", "Sinh nhiều biến thể nhanh cho A/B testing."],
         cons: ["Credit system và billing cần đọc kỹ trước khi dùng.", "Output có thể lặp nếu brief và brand asset yếu.", "Không thay thế designer trong campaign lớn."],
         workflow: ["Upload brand và landing page.", "Sinh biến thể ad theo góc bán hàng.", "Chọn top creative để test Facebook/Google."],
-        avoid: "Không chọn nếu bạn chỉ cần vài banner đơn giản, Canva có thể đủ.",
+        avoid: "Không chọn nếu nhu cầu chỉ là vài banner đơn giản; Canva có thể đủ.",
         verdict: "Hợp performance marketing, nhưng phải quản credit và điều khoản trial/billing cẩn thận."
     },
     {
@@ -707,10 +707,10 @@ const tools = [
         summary: "Buffer có Free plan, Essentials $5/channel/mo annual, AI Assistant, ideas, scheduling và analytics đủ gọn cho team nhỏ.",
         currentNote: "Nguồn Buffer ghi Essentials $5/month cho 1 channel, có AI Assistant và unlimited scheduled posts per channel.",        demoSource: "https://www.youtube.com/watch?v=8ImwfQ1WeKI",
         metrics: { video: 1, avatar: 1, copy: 3, ad: 2, social: 5, automation: 4, control: 4, ease: 5, speed: 5, vietnamese: 3, safety: 4, costClarity: 5 },
-        pros: ["Dễ dùng và rẻ cho scheduling cơ bản.", "AI Assistant đủ cho caption, repurpose content.", "Hợp SME cần đều bài hơn là analytics phức tạp."],
+        pros: ["Dễ dùng và chi phí thấp cho scheduling cơ bản.", "AI Assistant đủ cho caption, repurpose content.", "Hợp SME cần đều bài hơn là analytics phức tạp."],
         cons: ["Social listening và enterprise analytics không sâu như Sprout.", "Không tạo video/visual mạnh.", "Chi phí tăng theo channel nếu mở rộng nhiều kênh."],
         workflow: ["Tạo caption bằng ChatGPT/Copy.ai.", "Lên lịch trong Buffer theo kênh.", "Đọc analytics cơ bản để cải thiện lịch đăng."],
-        avoid: "Không chọn nếu bạn cần social listening, sentiment và quy trình CSKH lớn.",
+        avoid: "Không chọn nếu nhu cầu chính là social listening, sentiment và quy trình CSKH lớn.",
         verdict: "Starter tốt nhất cho social operations gọn nhẹ."
     },
     {
@@ -871,19 +871,19 @@ const priceProfiles = {
         sourceLabel: "Grok Pricing"
     },
     deepseek: {
-        label: "Free chat / API rất rẻ",
+        label: "Free chat / API chi phí thấp",
         entryMonthly: 0,
         practicalMonthly: 0,
         billing: "Chat dùng thử miễn phí; API V4-Flash từ $0.14 input miss và $0.28 output / 1M tokens",
         freeTier: true,
         creditRisk: 1,
         confidence: "official",
-        note: "Một trong các lựa chọn ngon bổ rẻ nhất cho reasoning, tóm tắt, code, SOP và nháp content. Không dành cho video/creative asset.",
+        note: "Một trong các lựa chọn hiệu quả chi phí nhất cho reasoning, tóm tắt, code, SOP và nháp content. Không dành cho video/creative asset.",
         sourceUrl: "https://api-docs.deepseek.com/quick_start/pricing",
         sourceLabel: "DeepSeek pricing"
     },
     qwen: {
-        label: "Free quota / API rẻ",
+        label: "Free quota / API chi phí thấp",
         entryMonthly: 0,
         practicalMonthly: 0,
         billing: "Qwen-Flash/Qwen3.5-Flash tính theo 1M tokens; International có free quota 90 ngày sau khi kích hoạt",
@@ -902,7 +902,7 @@ const priceProfiles = {
         freeTier: true,
         creditRisk: 1,
         confidence: "official",
-        note: "Ngon bổ rẻ nhất cho người đã sống trong Word, Excel, PowerPoint, Outlook. Giá trị giảm mạnh nếu team không dùng Microsoft 365.",
+        note: "Hiệu quả chi phí nhất với đội ngũ đã dùng Word, Excel, PowerPoint, Outlook. Giá trị giảm mạnh nếu team không dùng Microsoft 365.",
         sourceUrl: "https://www.microsoft.com/en-us/store/b/copilotpro",
         sourceLabel: "Microsoft 365 Premium"
     },
@@ -986,7 +986,7 @@ const priceProfiles = {
         freeTier: true,
         creditRisk: 3,
         confidence: "official",
-        note: "Ngon bổ rẻ nhất trong nhóm avatar/sales video nếu cần người nói, voice và localization.",
+        note: "Hiệu quả chi phí nhất trong nhóm avatar/sales video nếu cần người nói, voice và localization.",
         sourceUrl: "https://www.heygen.com/pricing",
         sourceLabel: "HeyGen pricing"
     },
@@ -1047,7 +1047,7 @@ const priceProfiles = {
         freeTier: true,
         creditRisk: 2,
         confidence: "verify",
-        note: "Đáng tiền khi team đã dùng Adobe và cần quyền thương mại/brand safety hơn là số lượng rẻ.",
+        note: "Đáng tiền khi team đã dùng Adobe và cần quyền thương mại/brand safety hơn là số lượng chi phí thấp.",
         sourceUrl: "https://www.adobe.com/products/firefly/plans.html",
         sourceLabel: "Adobe Firefly plans"
     },
@@ -1059,7 +1059,7 @@ const priceProfiles = {
         freeTier: true,
         creditRisk: 1,
         confidence: "verify",
-        note: "Ngon bổ rẻ nhất cho social post, deck, banner, template nhanh nếu team không chuyên design.",
+        note: "Hiệu quả chi phí nhất cho social post, deck, banner, template nhanh nếu team không chuyên design.",
         sourceUrl: "https://www.canva.com/pricing/",
         sourceLabel: "Canva pricing"
     },
@@ -1083,7 +1083,7 @@ const priceProfiles = {
         freeTier: false,
         creditRisk: 2,
         confidence: "official",
-        note: "Không rẻ cho cá nhân. Đáng tiền khi team cần brand voice, agent và governance marketing.",
+        note: "Không tối ưu cho cá nhân. Đáng tiền khi team cần brand voice, agent và governance marketing.",
         sourceUrl: "https://www.jasper.ai/pricing",
         sourceLabel: "Jasper pricing"
     },
@@ -1107,7 +1107,7 @@ const priceProfiles = {
         freeTier: true,
         creditRisk: 1,
         confidence: "official",
-        note: "Ngon bổ rẻ nhất cho scheduling social cơ bản. Chi phí tăng theo số channel.",
+        note: "Hiệu quả chi phí nhất cho scheduling social cơ bản. Chi phí tăng theo số channel.",
         sourceUrl: "https://buffer.com/pricing",
         sourceLabel: "Buffer pricing"
     },
@@ -1119,7 +1119,7 @@ const priceProfiles = {
         freeTier: false,
         creditRisk: 1,
         confidence: "official",
-        note: "Không phải lựa chọn rẻ. Chỉ đáng tiền khi cần governance, inbox, reporting và listening cấp team lớn.",
+        note: "Không phải lựa chọn chi phí thấp. Chỉ đáng tiền khi cần governance, inbox, reporting và listening cấp team lớn.",
         sourceUrl: "https://sproutsocial.com/pricing/",
         sourceLabel: "Sprout Social pricing"
     },
@@ -1143,7 +1143,7 @@ const priceProfiles = {
         freeTier: true,
         creditRisk: 2,
         confidence: "official-region",
-        note: "Gần như bắt buộc trong stack video social vì rẻ so với giá trị hậu kỳ, nhưng phải kiểm giá trong app.",
+        note: "Gần như bắt buộc trong stack video social vì chi phí thấp so với giá trị hậu kỳ, nhưng phải kiểm giá trong app.",
         sourceUrl: "https://www.capcut.com/help/new-capcut-subscription-pricing",
         sourceLabel: "CapCut pricing update"
     }
@@ -1151,14 +1151,14 @@ const priceProfiles = {
 
 const planProfiles = {
     chatgpt: [
-        ["Free", "$0/tháng", "Thử nhanh, hỏi đáp hằng ngày", ["GPT-5.5 Instant giới hạn", "Tin nhắn, upload, tạo ảnh, deep research và memory giới hạn", "Phù hợp demo nội bộ hoặc người mới"], "Nâng lên Plus khi cần reasoning, file, ảnh và research nhiều hơn."],
+        ["Free", "$0/tháng", "Thử nhanh, hỏi đáp hằng ngày", ["GPT-5.5 Instant giới hạn", "Tin nhắn, upload, tạo ảnh, deep research và memory giới hạn", "Phù hợp demo nội bộ hoặc thử nghiệm ban đầu"], "Nâng lên Plus khi cần reasoning, file, ảnh và research nhiều hơn."],
         ["Plus", "$20/tháng", "Cá nhân làm việc nghiêm túc", ["GPT-5.5 Thinking, message/upload mở rộng", "Deep research, agent mode, memory/context và custom GPTs mở rộng", "Phù hợp marketing, báo cáo, prompt, phân tích tài liệu"], "Hơn Free/Go ở reasoning, giới hạn dùng và công cụ làm việc."],
         ["Pro", "Theo trang giá", "Power user cần giới hạn cao", ["Usage cao hơn Plus, truy cập GPT-5.5 Pro", "Codex, deep research, agent mode và tạo ảnh mức cao", "Phù hợp người làm AI mỗi ngày"], "Hơn Plus ở hạn mức, model Pro và ưu tiên tính năng mới."],
         ["Business / Enterprise", "Theo seat / custom", "Team cần quản trị và bảo mật", ["Workspace chung, quản lý user, bảo mật, SSO/MFA tùy gói", "Kết nối app doanh nghiệp và không dùng dữ liệu để train theo chính sách gói", "Phù hợp triển khai công ty"], "Hơn Pro ở admin, compliance, data control và hỗ trợ."]
     ],
     claude: [
         ["Free", "$0/tháng", "Thử viết, đọc tài liệu nhẹ", ["Truy cập Claude trên web/app với giới hạn", "Hợp kiểm tone, tóm tắt ngắn, hỏi đáp", "Không phù hợp volume lớn"], "Nâng Pro khi cần làm việc đều với tài liệu dài."],
-        ["Pro", "$20/tháng", "Cá nhân viết, phân tích, research", ["Usage cao hơn Free", "Hợp long-form, tài liệu, coding và phân tích", "Giá rẻ hơn nhiều so với Max"], "Hơn Free ở hạn mức và độ ổn định khi dùng hằng ngày."],
+        ["Pro", "$20/tháng", "Cá nhân viết, phân tích, research", ["Usage cao hơn Free", "Hợp long-form, tài liệu, coding và phân tích", "Chi phí thấp hơn nhiều so với Max"], "Hơn Free ở hạn mức và độ ổn định khi dùng hằng ngày."],
         ["Max 5x / 20x", "Từ $100/tháng", "Power user cần nhiều lượt", ["5x hoặc 20x usage hơn Pro", "Output limit cao hơn, ưu tiên lúc cao điểm", "Early access tính năng nâng cao"], "Hơn Pro ở quota, ưu tiên và khả năng xử lý task nặng."],
         ["Team / Enterprise", "Theo team / custom", "Doanh nghiệp cần quản trị", ["Workspace, quyền truy cập, bảo mật và hợp đồng doanh nghiệp", "Phù hợp triển khai nhiều phòng ban", "Cần hỏi sales để chốt điều khoản"], "Hơn Max cá nhân ở quản trị, bảo mật và triển khai đội nhóm."]
     ],
@@ -1173,7 +1173,7 @@ const planProfiles = {
         ["API / Enterprise", "Theo usage/custom", "Tích hợp hoặc team lớn", ["Tính theo API hoặc hợp đồng", "Phù hợp automation realtime", "Cần kiểm chính sách dữ liệu và region"], "Hơn SuperGrok ở tích hợp và quản trị."]
     ],
     deepseek: [
-        ["Free chat", "$0/tháng", "Thử reasoning, code, SOP", ["Chat miễn phí có giới hạn", "Hợp nháp nội dung, logic, code, checklist", "Không phải tool video/creative"], "Nâng API khi cần batch rẻ và tích hợp."],
+        ["Free chat", "$0/tháng", "Thử reasoning, code, SOP", ["Chat miễn phí có giới hạn", "Hợp nháp nội dung, logic, code, checklist", "Không phải tool video/creative"], "Nâng API khi cần batch chi phí thấp và tích hợp."],
         ["API Flash/Pro", "Theo token", "Batch content và automation", ["Chi phí thấp theo 1M tokens", "Có dòng Flash/Pro tùy chất lượng/tốc độ", "Hợp xử lý volume lớn"], "Hơn chat ở giá đo được, tự động hóa và scale."],
         ["Private / enterprise", "Liên hệ", "Dữ liệu nhạy cảm hoặc volume lớn", ["Đàm phán quota, bảo mật, support", "Phù hợp hệ thống nội bộ", "Cần kiểm chính sách lưu trữ dữ liệu"], "Hơn API public ở kiểm soát và hỗ trợ."]
     ],
@@ -1183,7 +1183,7 @@ const planProfiles = {
         ["Enterprise Alibaba Cloud", "Theo hợp đồng", "Doanh nghiệp cần cloud governance", ["Quota, billing, bảo mật và support theo cloud", "Phù hợp team kỹ thuật có hạ tầng Alibaba", "Cần kiểm region"], "Hơn API lẻ ở quản trị và cam kết vận hành."]
     ],
     copilot: [
-        ["Free Copilot", "$0/tháng", "Hỏi đáp và tạo nội dung nhẹ", ["Truy cập Copilot cơ bản", "Hợp người mới và tác vụ web đơn giản", "Giới hạn tùy tài khoản/region"], "Nâng Microsoft 365 khi làm việc trong Word/Excel/PowerPoint."],
+        ["Free Copilot", "$0/tháng", "Hỏi đáp và tạo nội dung nhẹ", ["Truy cập Copilot cơ bản", "Phù hợp tác vụ web đơn giản", "Giới hạn tùy tài khoản/region"], "Nâng Microsoft 365 khi làm việc trong Word/Excel/PowerPoint."],
         ["Microsoft 365 Premium", "$19.99/tháng", "Người dùng Office cá nhân", ["Copilot trong productivity apps", "AI usage mở rộng, Designer/Clipchamp tùy gói", "Rất hợp báo cáo, email, slide"], "Hơn Free ở tích hợp Office và workflow tài liệu."],
         ["Copilot for business", "Theo seat", "Công ty dùng Microsoft 365", ["Quản trị user, bảo mật, quyền truy cập dữ liệu", "Phù hợp triển khai theo phòng ban", "Cần kiểm license hiện có"], "Hơn cá nhân ở compliance, admin và dữ liệu công ty."]
     ],
@@ -1200,7 +1200,7 @@ const planProfiles = {
     gemini: [
         ["Free", "$0/tháng", "Hỏi đáp và thử hệ Google", ["Truy cập Gemini cơ bản", "Hợp research nhẹ và nội dung nhanh", "Video/Flow bị giới hạn"], "Nâng AI Plus/Pro khi cần credit video và Workspace."],
         ["Google AI Plus", "$7.99/tháng", "Entry có credit AI", ["Có Flow credits mức thấp", "Hợp thử image/video ngắn", "Phù hợp cá nhân tiết kiệm"], "Hơn Free ở credit và quyền dùng tính năng AI mới."],
-        ["Google AI Pro", "$19.99/tháng", "Dùng thực tế cho video/workflow", ["Flow credits cao hơn Plus", "Hợp Gemini, Flow, Workspace tùy region", "Nên chọn nếu demo video cho sếp"], "Hơn Plus ở credit, model/tính năng và độ thực dụng."],
+        ["Google AI Pro", "$19.99/tháng", "Dùng thực tế cho video/workflow", ["Flow credits cao hơn Plus", "Hợp Gemini, Flow, Workspace tùy region", "Nên chọn nếu cần demo video cho lãnh đạo"], "Hơn Plus ở credit, model/tính năng và độ thực dụng."],
         ["Ultra / Enterprise", "Cao hơn / custom", "Team cần limit và quản trị", ["Hạn mức cao, tính năng premium, quản trị theo Workspace", "Phù hợp triển khai công ty", "Cần kiểm region"], "Hơn Pro ở quota, quản trị và hỗ trợ."]
     ],
     runway: [
@@ -1239,7 +1239,7 @@ const planProfiles = {
         ["Pro / higher", "Cao hơn", "Dùng thường xuyên", ["Nhiều credit, tốc độ/queue tốt hơn tùy gói", "Phù hợp social team", "Cần kiểm checkout hiện tại"], "Hơn Standard ở volume và priority."]
     ],
     sora: [
-        ["Không mua mới", "Discontinued", "Chỉ làm case study", ["Sản phẩm consumer đã dừng theo nguồn hiện có", "Không phù hợp đề xuất stack mới", "Giữ để giải thích rủi ro nền tảng"], "Không nâng cấp. Chọn Gemini/Runway/Kling/Luma thay thế."],
+        ["Không mua mới", "Discontinued", "Chỉ làm case study", ["Sản phẩm consumer đã dừng theo nguồn hiện có", "Không phù hợp đề xuất stack mới", "Giữ để minh họa rủi ro phụ thuộc nền tảng"], "Không nâng cấp. Chọn Gemini/Runway/Kling/Luma thay thế."],
         ["API legacy", "Đã/đang dừng theo mốc nguồn", "Chỉ tham khảo lịch sử", ["Không dùng làm kế hoạch mới", "Cần kiểm thông báo OpenAI nếu có thay đổi", "Rủi ro vận hành cao"], "Không nên trình như lựa chọn mua."]
     ],
     midjourney: [
@@ -1264,7 +1264,7 @@ const planProfiles = {
         ["Agency / custom", "Custom", "Quản lý nhiều khách hàng", ["Nhiều brand/client, quyền team", "Phù hợp agency ads", "Cần kiểm điều khoản credit"], "Hơn gói giữa ở multi-client và governance."]
     ],
     jasper: [
-        ["Creator / entry", "Theo trang giá", "Cá nhân viết content", ["Viết, chỉnh tone, campaign content", "Hợp content marketer", "Không rẻ như ChatGPT/Claude"], "Nâng Pro khi cần brand voice và team workflow."],
+        ["Creator / entry", "Theo trang giá", "Cá nhân viết content", ["Viết, chỉnh tone, campaign content", "Hợp content marketer", "Chi phí cao hơn ChatGPT/Claude"], "Nâng Pro khi cần brand voice và team workflow."],
         ["Pro", "$69/seat/tháng", "Marketing team nghiêm túc", ["Brand voice, agents/workflows theo nguồn hiện có", "Hợp content operation, campaign", "Giá theo seat"], "Hơn entry ở governance nội dung và workflow marketing."],
         ["Business", "Custom", "Enterprise marketing", ["SSO, admin, security, custom workflow", "Hợp brand lớn", "Cần sales"], "Hơn Pro ở bảo mật, quản trị và hỗ trợ."]
     ],
@@ -1279,7 +1279,7 @@ const planProfiles = {
         ["Team / Agency", "Cao hơn", "Nhiều người duyệt bài", ["Collaboration, approval, reporting tốt hơn", "Phù hợp team social", "Cần tính số channel"], "Hơn Essentials ở teamwork và governance."]
     ],
     sprout: [
-        ["Essentials", "$79/seat/tháng annual", "Entry cho team cần inbox/report", ["Quản social tập trung", "Phù hợp team nhỏ nhưng nghiêm túc", "Không rẻ cho SME nhỏ"], "Nâng Standard khi cần tính năng quản trị đầy đủ hơn."],
+        ["Essentials", "$79/seat/tháng annual", "Entry cho team cần inbox/report", ["Quản social tập trung", "Phù hợp team nhỏ nhưng nghiêm túc", "Chi phí cao với SME nhỏ"], "Nâng Standard khi cần tính năng quản trị đầy đủ hơn."],
         ["Standard", "$199/seat/tháng", "Social team chuyên nghiệp", ["Publishing, engagement, reporting cấp team", "Hợp doanh nghiệp vận hành nhiều kênh", "Giá theo seat"], "Hơn Essentials ở workflow và reporting."],
         ["Professional / Advanced", "$299-$399/seat/tháng", "Listening và analytics sâu", ["AI Assist/sentiment/listening tùy tier", "Hợp thương hiệu lớn", "Cần đo ROI social rõ"], "Hơn Standard ở phân tích, automation và insight."],
         ["Enterprise", "Custom", "Tập đoàn", ["Governance, support, security, custom needs", "Phù hợp nhiều brand/region", "Cần sales"], "Hơn Advanced ở quản trị và hỗ trợ."]
@@ -1308,7 +1308,7 @@ const valueUseCases = [
 ];
 
 const valueStrategies = [
-    { id: "balanced", label: "Ngon bổ rẻ" },
+    { id: "balanced", label: "Hiệu quả chi phí" },
     { id: "cheapest", label: "Rẻ nhất vẫn dùng được" },
     { id: "low-risk", label: "Ít rủi ro credit" },
     { id: "premium", label: "Chất lượng hơn giá" }
@@ -1386,7 +1386,7 @@ const useCases = [
         tools: ["Jasper", "Copy.ai", "Claude"]
     },
     {
-        title: "Research, báo cáo và fact-check giá rẻ",
+        title: "Research, báo cáo và fact-check chi phí thấp",
         body: "Cần nguồn rõ, tóm tắt nhanh, so sánh đối thủ và nháp báo cáo trước khi làm slide.",
         tools: ["Perplexity", "Kimi K2.6", "DeepSeek"]
     },
@@ -1408,7 +1408,7 @@ const stacks = [
         title: "Free-first Office",
         price: "$0-$20/tháng",
         body: "Copilot free hoặc Microsoft 365 đang có sẵn + DeepSeek + Kimi K2.6 + Perplexity free + Qwen/Mistral để làm báo cáo, email, SOP và research có nguồn.",
-        tokens: ["Ngon bổ rẻ", "Báo cáo", "Research có nguồn"]
+        tokens: ["Hiệu quả chi phí", "Báo cáo", "Research có nguồn"]
     },
     {
         title: "Growth Team",
@@ -1561,14 +1561,14 @@ const finderProfiles = {
         industries: ["marketing", "office", "hr", "sales", "education", "finance", "legal", "manufacturing", "startup"],
         roles: ["office", "assistant", "admin", "finance", "legal", "operations", "founder", "manager", "content", "marketer"],
         tasks: ["copy", "office-report", "automation", "finance-report", "compliance", "operations-doc", "training"],
-        keywords: ["free", "rẻ", "reasoning", "code", "sop", "báo cáo", "phân tích", "checklist", "dữ liệu"],
+        keywords: ["free", "chi phí thấp", "reasoning", "code", "sop", "báo cáo", "phân tích", "checklist", "dữ liệu"],
         guide: ["Dùng để phân rã yêu cầu thành bước làm rõ ràng.", "Tạo outline, SOP, checklist, script hoặc prompt kỹ thuật.", "Dùng thêm nguồn chính thức nếu nội dung có số liệu hoặc claim quan trọng."]
     },
     qwen: {
         industries: ["marketing", "office", "education", "ecommerce", "finance", "manufacturing", "startup"],
         roles: ["office", "assistant", "content", "teacher", "ecommerce", "operations", "founder", "manager", "marketer"],
         tasks: ["copy", "office-report", "automation", "design", "operations-doc", "training"],
-        keywords: ["qwen", "đa ngôn ngữ", "dịch", "tài liệu dài", "api rẻ", "batch", "ecommerce", "long context"],
+        keywords: ["qwen", "đa ngôn ngữ", "dịch", "tài liệu dài", "api chi phí thấp", "batch", "ecommerce", "long context"],
         guide: ["Dùng cho dịch, tóm tắt và chuẩn hóa nội dung đa ngôn ngữ.", "Tạo nội dung batch cho e-commerce hoặc tài liệu nội bộ.", "Nếu cần API, thử nhóm Flash trước để tối ưu chi phí."]
     },
     copilot: {
@@ -1589,7 +1589,7 @@ const finderProfiles = {
         industries: ["marketing", "office", "education", "startup", "manufacturing", "legal"],
         roles: ["office", "assistant", "content", "teacher", "founder", "operations", "manager", "marketer"],
         tasks: ["copy", "office-report", "automation", "operations-doc", "training"],
-        keywords: ["mistral", "le chat", "free", "rẻ", "workflow", "coding", "tài liệu", "web search"],
+        keywords: ["mistral", "le chat", "free", "chi phí thấp", "workflow", "coding", "tài liệu", "web search"],
         guide: ["Dùng như trợ lý free-value cho nháp, tài liệu và checklist.", "Tạo prompt, SOP, email hoặc outline nhanh.", "So sánh output với DeepSeek/Claude khi cần bản final chắc hơn."]
     },
     gemini: {
@@ -1632,14 +1632,14 @@ const finderProfiles = {
         roles: ["hr", "teacher", "office", "manager"],
         tasks: ["avatar", "hr", "office-report"],
         keywords: ["training", "sop", "đào tạo", "onboarding", "corporate"],
-        guide: ["Hợp tài liệu training, SOP, video giải thích nghiêm túc.", "Chuẩn bị script dạng bullet theo module.", "Dùng template để giữ consistency cho nội bộ."]
+        guide: ["Hợp tài liệu training, SOP, video đào tạo nghiêm túc.", "Chuẩn bị script dạng bullet theo module.", "Dùng template để giữ consistency cho nội bộ."]
     },
     pika: {
         industries: ["marketing", "ecommerce", "agency"],
         roles: ["content", "marketer", "designer"],
         tasks: ["video", "social"],
         keywords: ["meme", "effect", "short", "reels", "hook"],
-        guide: ["Dùng như phòng thử ý tưởng visual hook.", "Tạo nhiều biến thể nhanh rồi chọn hướng thắng.", "Không dùng một mình cho campaign cần brand control cao."]
+        guide: ["Dùng như phòng thử ý tưởng visual hook.", "Tạo nhiều biến thể nhanh rồi chọn hướng thắng.", "Không dùng độc lập cho campaign cần brand control cao."]
     },
     sora: {
         industries: ["marketing", "agency", "education"],
@@ -1716,7 +1716,7 @@ const finderProfiles = {
         roles: ["content", "marketer", "teacher"],
         tasks: ["social"],
         keywords: ["caption", "edit", "tiktok", "reels", "shorts", "cắt video"],
-        guide: ["Dùng để hoàn thiện clip: cắt nhịp, caption, nhạc, format social.", "Kết thúc pipeline từ Runway/Kling/Pika/HeyGen.", "Phù hợp người mới vì thao tác nhanh và nhiều template."]
+        guide: ["Dùng để hoàn thiện clip: cắt nhịp, caption, nhạc, format social.", "Kết thúc pipeline từ Runway/Kling/Pika/HeyGen.", "Phù hợp đội vận hành cần thao tác nhanh và nhiều template."]
     }
 };
 
@@ -2042,7 +2042,7 @@ function defaultPlanProfile(tool) {
     };
     const focus = categoryFocus[tool.category] || categoryFocus.core;
     return [
-        ["Free / trial", pricing.freeTier ? "$0 ban đầu" : "Có thể không có free", "Dùng để thử nhanh trước khi trình sếp", [pricing.billing, focus[0], "Không dùng để cam kết ngân sách production"], "Nâng gói trả phí khi kết quả đã hợp workflow."],
+        ["Free / trial", pricing.freeTier ? "$0 ban đầu" : "Có thể không có free", "Dùng để thử nhanh trước khi trình lãnh đạo", [pricing.billing, focus[0], "Không dùng để cam kết ngân sách production"], "Nâng gói trả phí khi kết quả đã hợp workflow."],
         ["Gói thực tế", pricing.label, "Mốc nên so sánh ngân sách", [pricing.note, focus[1], `Rủi ro chi phí: ${costRiskLabel(pricing.creditRisk)}`], "Hơn trial ở hạn mức, output sạch và độ ổn định."],
         ["Team / scale", "Custom hoặc gói cao hơn", "Khi nhiều người dùng hoặc volume lớn", ["Thường thêm quản trị user, bảo mật, billing và support", focus[2], "Cần mở nguồn giá hoặc checkout trước khi mua"], "Hơn gói thực tế ở governance, quota và hỗ trợ."]
     ].map(normalizePlan);
@@ -2168,7 +2168,7 @@ function finderReasons(tool, profile, context, task, matches) {
     if (matches.taskMatch) reasons.push(`Khớp trực tiếp với việc: ${context.taskLabel}.`);
     if (matches.roleMatch) reasons.push(`Phù hợp vai trò ${context.roleLabel}.`);
     if (matches.industryMatch) reasons.push(`Có tình huống sử dụng tốt trong bối cảnh ${context.industryLabel}.`);
-    if (matches.keywordHits) reasons.push(`Mô tả của bạn khớp ${matches.keywordHits} cụm keyword trong hồ sơ tool.`);
+    if (matches.keywordHits) reasons.push(`Mô tả nhập vào khớp ${matches.keywordHits} cụm keyword trong hồ sơ tool.`);
 
     const strengths = task.focus
         .map((key) => [metricLabels[key] || key, metricScore(tool, key)])
@@ -2784,7 +2784,7 @@ function buildPrompt(tool, context, variant = 0) {
         ],
         content: [
             `${contextLine} Hãy xây dựng content brief bằng ${toolName}: mục tiêu, audience, insight, outline, key message, tone, CTA và checklist kiểm tra trước khi gửi.`,
-            `${contextLine} Hãy viết bản nháp nội dung đầu tiên, sau đó tự review theo tiêu chí: rõ ý, đúng tone, có dẫn chứng, dễ hiểu, tránh sáo rỗng.`,
+            `${contextLine} Hãy viết bản nháp nội dung đầu tiên, sau đó tự review theo tiêu chí: rõ ý, đúng tone, có dẫn chứng, mạch lạc, tránh sáo rỗng.`,
             `${contextLine} Hãy tạo 5 biến thể nội dung cho các kênh khác nhau: email, LinkedIn/Facebook, landing page, script video và thông báo nội bộ.`
         ],
         core: [
@@ -3105,7 +3105,7 @@ function compareVerdict(toolA, toolB) {
                     ${compareScoreLine(toolB, totalB, !tieResult && leaderTool === toolB)}
                 </div>
                 <div class="value-callout">
-                    <span>Ngon bổ rẻ hơn</span>
+                    <span>Hiệu quả chi phí hơn</span>
                     <strong>${valueGap < 0.08 ? "Gần như ngang nhau" : valueLeader.name}</strong>
                     <p>${valueGap < 0.08 ? "Hai công cụ không lệch nhiều về độ đáng tiền. Chọn theo quy trình và nguồn giá." : `${valueLeader.name} có độ đáng tiền ${valuePercent(valueScore(valueLeader))}% với giá ${priceLabel(valueLeader)}.`}</p>
                 </div>
