@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tổng quan ứng dụng AI trong công việc</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="intro.css">
+</head>
+<body>
+    <header class="intro-topbar">
+        <a class="brand" href="../" aria-label="Quay về AI Marketing Radar">
+            <span>AI</span>
+            <strong>Tổng quan AI</strong>
+        </a>
+        <nav class="top-actions" aria-label="Điều hướng trình chiếu">
+            <a href="../">Dashboard so sánh</a>
+            <button id="fontToggle" type="button">Chữ lớn</button>
+            <button id="presentToggle" type="button">Chế độ trình chiếu</button>
+        </nav>
+    </header>
+
+    <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+    <main class="deck-shell">
+        <aside class="toc" aria-label="Mục lục slide">
+            <p class="toc-kicker">Mục lục</p>
+            <button class="toc-link active" type="button" data-jump="slide-01">1. Bối cảnh ứng dụng</button>
+            <button class="toc-link" type="button" data-jump="slide-03">2. Năng lực chính</button>
+            <button class="toc-link" type="button" data-jump="slide-05">3. Các model lớn</button>
+            <button class="toc-link" type="button" data-jump="slide-07">4. Cách giao việc</button>
+            <button class="toc-link" type="button" data-jump="slide-10">5. Kiểm chứng & an toàn</button>
+            <button class="toc-link" type="button" data-jump="slide-13">6. Triển khai nội bộ</button>
+        </aside>
+
+        <section class="slides" aria-label="Nội dung trình chiếu tổng quan AI">
+            <article id="slide-01" class="slide hero-slide" data-slide>
+                <div class="slide-copy">
+                    <p class="eyebrow">Tổng quan ứng dụng AI</p>
+                    <h1>AI hỗ trợ công việc như thế nào và cần quản trị ra sao?</h1>
+                    <p class="lead">
+                        Phần này tóm tắt cách doanh nghiệp có thể dùng AI để tăng tốc phân tích, soạn thảo,
+                        sản xuất nội dung và vận hành, đồng thời vẫn kiểm soát chất lượng đầu ra.
+                    </p>
+                    <div class="hero-actions">
+                        <button class="primary" type="button" data-next>Bắt đầu trình chiếu</button>
+                        <a class="secondary" href="#slide-13">Xem lộ trình triển khai</a>
+                    </div>
+                </div>
+                <div class="hero-board" aria-label="Tóm tắt ba ý chính">
+                    <div class="concept-tile strong">
+                        <span>01</span>
+                        <strong>AI là lớp hỗ trợ năng suất</strong>
+                        <p>Hỗ trợ đọc, viết, tổng hợp, phân tích và tạo bản nháp cho nhiều quy trình công việc.</p>
+                    </div>
+                    <div class="concept-tile">
+                        <span>02</span>
+                        <strong>Yêu cầu càng rõ, đầu ra càng ổn định</strong>
+                        <p>Cần xác định bối cảnh, mục tiêu, dữ liệu đầu vào, tiêu chí chất lượng và định dạng đầu ra.</p>
+                    </div>
+                    <div class="concept-tile">
+                        <span>03</span>
+                        <strong>Cần kiểm chứng trước khi sử dụng</strong>
+                        <p>AI có thể sai hoặc thiếu ngữ cảnh; quyết định cuối cùng vẫn thuộc về người phụ trách nghiệp vụ.</p>
+                    </div>
+                </div>
+                <aside class="speaker-note">
+                    <strong>Thông điệp trình bày:</strong>
+                    “AI nên được xem là công cụ tăng tốc quy trình. Giá trị thực tế đến từ yêu cầu rõ, dữ liệu đúng và bước kiểm duyệt của con người.”
+                </aside>
+            </article>
+
+            <article id="slide-02" class="slide" data-slide>
+                <div class="section-heading">
+                    <p class="eyebrow">Khái niệm vận hành</p>
+                    <h2>AI là hệ thống được huấn luyện để nhận diện mẫu, xử lý ngữ cảnh và tạo đầu ra theo yêu cầu.</h2>
+                    <p>
+                        Trong môi trường doanh nghiệp, AI có thể được dùng như một lớp hỗ trợ xử lý thông tin:
+                        nhận yêu cầu, phân tích dữ liệu đầu vào và đề xuất bản nháp để con người kiểm duyệt.
+                    </p>
+                </div>
+                <div class="plain-grid three">
+                    <div class="simple-card">
+                        <span class="big-number">1</span>
+                        <h3>Hiểu yêu cầu</h3>
+                        <p>AI nhận diện mục tiêu, bối cảnh, dữ liệu đầu vào và loại kết quả cần tạo.</p>
+                    </div>
+                    <div class="simple-card">
+                        <span class="big-number">2</span>
+                        <h3>Tìm mẫu phù hợp</h3>
+                        <p>Hệ thống kết hợp kiến thức đã học, nội dung hội thoại và tài liệu được cung cấp.</p>
+                    </div>
+                    <div class="simple-card">
+                        <span class="big-number">3</span>
+                        <h3>Tạo câu trả lời</h3>
+                        <p>Đầu ra có thể là văn bản, bảng, ý tưởng, hình ảnh, mã, dàn ý hoặc kế hoạch triển khai.</p>
+                    </div>
+                </div>
+                <div class="key-message">
+                    <strong>Nguyên tắc sử dụng:</strong>
+                    Đầu ra của AI chỉ nên được xem là bản nháp có hỗ trợ. Các thông tin quan trọng cần được đối chiếu với nguồn chính thức trước khi đưa vào quyết định.
+                </div>
+            </article>
+
+            <article id="slide-03" class="slide" data-slide>
+                <div class="section-heading">
+                    <p class="eyebrow">AI tạo sinh</p>
+                    <h2>AI tạo sinh giúp tăng tốc các đầu việc tạo bản nháp và phân tích ban đầu.</h2>
+                    <p>
+                        AI tạo sinh có thể rút ngắn thời gian soạn thảo, tổng hợp và sản xuất nội dung. Để dùng trong công việc,
+                        đầu ra cần được chỉnh sửa theo mục tiêu, dữ liệu nội bộ, tiêu chuẩn thương hiệu và quy trình phê duyệt.
+                    </p>
+                </div>
+                <div class="capability-map">
+                    <div class="capability-card text">
+                        <strong>Văn bản</strong>
+                        <p>Email, thông báo, bài viết, kịch bản, tóm tắt tài liệu, dàn ý thuyết trình.</p>
+                    </div>
+                    <div class="capability-card image">
+                        <strong>Hình ảnh</strong>
+                        <p>Ý tưởng poster, banner, moodboard, chỉnh ảnh, mô tả concept cho designer.</p>
+                    </div>
+                    <div class="capability-card data">
+                        <strong>Dữ liệu</strong>
+                        <p>Đọc bảng, diễn giải số liệu, phát hiện điểm bất thường và tạo bản nháp báo cáo.</p>
+                    </div>
+                    <div class="capability-card video">
+                        <strong>Video & giọng nói</strong>
+                        <p>Kịch bản, storyboard, phụ đề, avatar, video ngắn, ý tưởng nội dung social.</p>
+                    </div>
+                </div>
+                <aside class="speaker-note">
+                    <strong>Thông điệp trình bày:</strong>
+                    “AI rút ngắn giai đoạn tạo bản nháp, nhưng bản cuối vẫn cần người phụ trách kiểm duyệt trước khi sử dụng.”
+                </aside>
+            </article>
+
+            <article id="slide-04" class="slide" data-slide>
+                <div class="section-heading split">
+                    <div>
+                        <p class="eyebrow">Phạm vi ứng dụng</p>
+                        <h2>Cần phân biệt rõ điểm mạnh, giới hạn và rủi ro của AI.</h2>
+                    </div>
+                    <p>AI phù hợp nhất khi được dùng để tăng tốc bước chuẩn bị, tổng hợp và tạo phương án; các quyết định quan trọng vẫn cần kiểm duyệt chuyên môn.</p>
+                </div>
+                <div class="compare-lanes">
+                    <div class="lane good">
+                        <h3>AI tạo giá trị cao khi...</h3>
+                        <ul class="large-list">
+                            <li>Cần tóm tắt tài liệu dài.</li>
+                            <li>Cần viết bản nháp email, báo cáo, kịch bản.</li>
+                            <li>Cần nhiều ý tưởng để chọn.</li>
+                            <li>Cần chuẩn hóa nội dung phức tạp thành bản trình bày dễ theo dõi.</li>
+                            <li>Cần sắp xếp lại thông tin lộn xộn thành bảng hoặc checklist.</li>
+                        </ul>
+                    </div>
+                    <div class="lane caution">
+                        <h3>AI cần kiểm soát chặt khi...</h3>
+                        <ul class="large-list">
+                            <li>Hỏi số liệu mới mà không yêu cầu nguồn.</li>
+                            <li>Đưa yêu cầu quá chung chung.</li>
+                            <li>Để AI thay người phụ trách đưa ra quyết định cuối cùng.</li>
+                            <li>Dùng cho pháp lý, y tế, tài chính mà không có chuyên gia kiểm lại.</li>
+                            <li>Đưa dữ liệu riêng tư, mật khẩu hoặc thông tin khách hàng nhạy cảm.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article id="slide-05" class="slide" data-slide>
+                <div class="section-heading">
+                    <p class="eyebrow">Các model lớn hiện nay</p>
+                    <h2>Không có một model tối ưu cho mọi nhu cầu. Mỗi model có thế mạnh riêng.</h2>
+                    <p>
+                        Khi xây dựng bộ công cụ, nên chọn theo nhiệm vụ, dữ liệu đầu vào, mức độ kiểm soát,
+                        chi phí vận hành và khả năng tích hợp với quy trình hiện có.
+                    </p>
+                </div>
+                <div class="model-wall">
+                    <article class="model-card openai">
+                        <span class="model-logo">C</span>
+                        <div>
+                            <h3>ChatGPT</h3>
+                            <p>Tổng quát, dễ dùng, viết, học, phân tích, tạo nội dung, làm việc đa bước.</p>
+                            <small>Phù hợp khi: cần một công cụ đa năng cho nhiều đầu việc hằng ngày.</small>
+                        </div>
+                    </article>
+                    <article class="model-card gemini">
+                        <span class="model-logo">G</span>
+                        <div>
+                            <h3>Gemini</h3>
+                            <p>Mạnh trong hệ Google, đa phương tiện, tìm hiểu thông tin, hỗ trợ học và sáng tạo.</p>
+                            <small>Phù hợp khi: đội ngũ đã dùng Google Workspace và các dịch vụ Google.</small>
+                        </div>
+                    </article>
+                    <article class="model-card claude">
+                        <span class="model-logo">CL</span>
+                        <div>
+                            <h3>Claude</h3>
+                            <p>Đọc tài liệu dài, viết rõ ràng, phân tích cẩn thận, hợp báo cáo và nội dung nghiêm túc.</p>
+                            <small>Phù hợp khi: cần đọc file dài, chỉnh văn bản và kiểm logic nội dung.</small>
+                        </div>
+                    </article>
+                    <article class="model-card grok">
+                        <span class="model-logo">X</span>
+                        <div>
+                            <h3>Grok</h3>
+                            <p>Mạnh ở thông tin realtime, web và X search, trend social, phản ứng nhanh.</p>
+                            <small>Phù hợp khi: cần nắm bắt xu hướng và tín hiệu thị trường theo thời gian thực.</small>
+                        </div>
+                    </article>
+                    <article class="model-card deepseek">
+                        <span class="model-logo">D</span>
+                        <div>
+                            <h3>DeepSeek</h3>
+                            <p>Giá trị cao cho reasoning, code, tóm tắt, SOP, phân tích và thử nghiệm chi phí thấp.</p>
+                            <small>Phù hợp khi: cần thử nghiệm chi phí thấp nhưng vẫn yêu cầu năng lực lập luận tốt.</small>
+                        </div>
+                    </article>
+                    <article class="model-card kimi">
+                        <span class="model-logo">K</span>
+                        <div>
+                            <h3>Kimi K2.6</h3>
+                            <p>Long-context, coding, agent task, tài liệu dài, hỗ trợ text/image/video input.</p>
+                            <small>Phù hợp khi: đầu vào dài và cần xử lý nhiều tài liệu trong cùng một luồng.</small>
+                        </div>
+                    </article>
+                </div>
+            </article>
+
+            <article id="slide-06" class="slide" data-slide>
+                <div class="section-heading">
+                    <p class="eyebrow">Chọn model theo nhu cầu</p>
+                    <h2>Khuyến nghị nên bắt đầu từ nhu cầu công việc, không bắt đầu từ tên model.</h2>
+                </div>
+                <div class="decision-table" role="table" aria-label="Bảng chọn model AI theo nhu cầu">
+                    <div class="table-row head" role="row">
+                        <span>Việc cần làm</span>
+                        <span>Nên thử trước</span>
+                        <span>Lý do lựa chọn</span>
+                    </div>
+                    <div class="table-row" role="row">
+                        <span>Viết email, thông báo, kế hoạch</span>
+                        <span>ChatGPT, Claude, DeepSeek</span>
+                        <span>Dễ dùng, viết rõ, sửa tone nhanh.</span>
+                    </div>
+                    <div class="table-row" role="row">
+                        <span>Tóm tắt tài liệu dài</span>
+                        <span>Claude, Kimi, Gemini</span>
+                        <span>Hợp file dài, cần giữ logic và ý chính.</span>
+                    </div>
+                    <div class="table-row" role="row">
+                        <span>Tìm hiểu thông tin mới, có nguồn</span>
+                        <span>Perplexity, Gemini, Grok</span>
+                        <span>Cần mở link nguồn và kiểm lại.</span>
+                    </div>
+                    <div class="table-row" role="row">
+                        <span>Làm social, bắt trend</span>
+                        <span>Grok, ChatGPT, Gemini</span>
+                        <span>Trend nhanh, nhiều góc nội dung.</span>
+                    </div>
+                    <div class="table-row" role="row">
+                        <span>Code, automation, quy trình kỹ thuật</span>
+                        <span>ChatGPT, Kimi, DeepSeek</span>
+                        <span>Phân rã bước, kiểm lỗi, viết script.</span>
+                    </div>
+                </div>
+                <div class="key-message">
+                    <strong>Nguyên tắc lựa chọn:</strong>
+                    Việc văn bản ưu tiên nhóm chat/model nền tảng; việc hình ảnh và video dùng công cụ chuyên biệt; việc cần dữ liệu cập nhật nên dùng công cụ có nguồn tham khảo rõ.
+                </div>
+            </article>
+
+            <article id="slide-07" class="slide" data-slide>
+                <div class="section-heading split">
+                    <div>
+                        <p class="eyebrow">Cách giao việc cho AI</p>
+                        <h2>Prompt là bản yêu cầu đầu vào để AI tạo kết quả đúng mục tiêu.</h2>
+                    </div>
+                    <p>Prompt hiệu quả cần mô tả rõ vai trò, bối cảnh, mục tiêu, dữ liệu và tiêu chuẩn đầu ra.</p>
+                </div>
+                <div class="prompt-formula">
+                    <div class="formula-step">
+                        <span>1</span>
+                        <strong>Vai trò</strong>
+                        <p>“Hãy đóng vai chuyên viên marketing / nhân sự / vận hành...”</p>
+                    </div>
+                    <div class="formula-step">
+                        <span>2</span>
+                        <strong>Bối cảnh</strong>
+                        <p>“Công ty tôi bán..., khách hàng là..., tài liệu đang có là...”</p>
+                    </div>
+                    <div class="formula-step">
+                        <span>3</span>
+                        <strong>Mục tiêu</strong>
+                        <p>“Tôi cần viết email / tóm tắt / lên kế hoạch / so sánh...”</p>
+                    </div>
+                    <div class="formula-step">
+                        <span>4</span>
+                        <strong>Dữ liệu</strong>
+                        <p>Dán thông tin, bảng, ghi chú, file hoặc yêu cầu nguồn.</p>
+                    </div>
+                    <div class="formula-step">
+                        <span>5</span>
+                        <strong>Định dạng</strong>
+                        <p>“Trả lời bằng bảng, bullet, checklist, 3 phương án...”</p>
+                    </div>
+                </div>
+                <aside class="speaker-note">
+                    <strong>Thông điệp trình bày:</strong>
+                    “Prompt càng giống một brief công việc rõ ràng, đầu ra càng dễ kiểm soát và tái sử dụng.”
+                </aside>
+            </article>
+
+            <article id="slide-08" class="slide" data-slide>
+                <div class="section-heading">
+                    <p class="eyebrow">Mẫu prompt gốc</p>
+                    <h2>Một mẫu brief có thể dùng cho hầu hết tác vụ văn bản và phân tích.</h2>
+                </div>
+                <div class="prompt-box">
+                    <button class="copy-button" type="button" data-copy="basePrompt">Copy prompt</button>
+                    <pre id="basePrompt">Hãy đóng vai [vai trò chuyên môn].
+Bối cảnh của tôi là: [mô tả ngắn công việc / công ty / người nhận].
+Tôi cần làm: [mục tiêu cụ thể].
+Dữ liệu hiện có: [dán thông tin, ghi chú hoặc file].
+
+Yêu cầu:
+1. Trả lời bằng ngôn ngữ rõ ràng, phù hợp người đọc trong doanh nghiệp.
+2. Nếu thiếu thông tin, hãy hỏi lại trước khi kết luận.
+3. Đưa ra kết quả theo dạng [bảng / checklist / email / kế hoạch].
+4. Nêu các điểm cần kiểm chứng trước khi sử dụng.</pre>
+                </div>
+                <div class="plain-grid two">
+                    <div class="simple-card">
+                        <h3>Prompt yếu</h3>
+                        <p>“Viết giúp tôi một bài quảng cáo.”</p>
+                        <small>Quá chung, chưa có thông tin về sản phẩm, khách hàng, giọng văn và kênh đăng.</small>
+                    </div>
+                    <div class="simple-card highlighted">
+                        <h3>Prompt tốt hơn</h3>
+                        <p>“Tôi bán khóa học tiếng Anh cho người đi làm. Viết 5 caption Facebook, giọng thân thiện, mỗi caption dưới 80 chữ, có CTA đăng ký tư vấn.”</p>
+                        <small>Có sản phẩm, khách hàng, kênh, số lượng, độ dài và giọng văn.</small>
+                    </div>
+                </div>
+            </article>
+
+            <article id="slide-09" class="slide" data-slide>
+                <div class="section-heading">
+                    <p class="eyebrow">Ví dụ dùng ngay</p>
+                    <h2>4 nhóm yêu cầu thường dùng trong môi trường làm việc.</h2>
+                </div>
+                <div class="example-grid">
+                    <article class="example-card">
+                        <h3>1. Tóm tắt văn bản</h3>
+                        <p>“Tóm tắt nội dung sau thành 5 ý chính. Mỗi ý không quá 2 dòng. Cuối cùng nêu 3 việc cần làm tiếp theo.”</p>
+                    </article>
+                    <article class="example-card">
+                        <h3>2. Viết email</h3>
+                        <p>“Viết email thông báo lịch họp cho nhân viên. Giọng lịch sự, ngắn gọn. Có thời gian, địa điểm, nội dung họp và việc cần chuẩn bị.”</p>
+                    </article>
+                    <article class="example-card">
+                        <h3>3. Chuẩn hóa một khái niệm</h3>
+                        <p>“Tóm tắt [khái niệm] thành bản giải thích ngắn cho đội ngũ nội bộ. Nêu định nghĩa, ứng dụng, rủi ro và 3 ví dụ liên quan đến công việc.”</p>
+                    </article>
+                    <article class="example-card">
+                        <h3>4. So sánh lựa chọn</h3>
+                        <p>“So sánh A và B theo bảng: giá, ưu điểm, nhược điểm, phù hợp với ai, rủi ro. Kết luận nên chọn gì nếu ngân sách thấp.”</p>
+                    </article>
+                </div>
+            </article>
+
+            <article id="slide-10" class="slide" data-slide>
+                <div class="section-heading split">
+                    <div>
+                        <p class="eyebrow">Kiểm chứng</p>
+                        <h2>Quy tắc 3 kiểm trước khi dùng câu trả lời của AI.</h2>
+                    </div>
+                    <p>Nguyên tắc kiểm chứng bắt buộc: nội dung AI tạo ra chỉ được sử dụng sau khi đối chiếu nguồn, ngữ cảnh và mức độ rủi ro.</p>
+                </div>
+                <div class="checklist-panel">
+                    <div class="check-item">
+                        <span>Kiểm 1</span>
+                        <strong>Nguồn</strong>
+                        <p>Thông tin mới, giá, luật, chính sách, y tế, tài chính phải có nguồn chính thức hoặc link kiểm chứng.</p>
+                    </div>
+                    <div class="check-item">
+                        <span>Kiểm 2</span>
+                        <strong>Ngữ cảnh</strong>
+                        <p>Câu trả lời có đúng công ty, khách hàng, thời gian, địa phương và mục tiêu triển khai không?</p>
+                    </div>
+                    <div class="check-item">
+                        <span>Kiểm 3</span>
+                        <strong>Hậu quả</strong>
+                        <p>Nếu sai thì có ảnh hưởng tiền bạc, pháp lý, sức khỏe, uy tín không? Nếu có, phải hỏi người có chuyên môn.</p>
+                    </div>
+                </div>
+                <div class="key-message warning">
+                    <strong>Nguyên tắc trách nhiệm:</strong>
+                    “AI hỗ trợ soạn nháp nhanh, nhưng người phụ trách vẫn chịu trách nhiệm về nội dung được sử dụng.”
+                </div>
+            </article>
+
+            <article id="slide-11" class="slide" data-slide>
+                <div class="section-heading">
+                    <p class="eyebrow">Bảo mật dữ liệu</p>
+                    <h2>Không đưa mọi thứ vào AI. Cần biết thông tin nào phải che.</h2>
+                </div>
+                <div class="privacy-grid">
+                    <div class="privacy-card danger">
+                        <h3>Không nên đưa trực tiếp</h3>
+                        <ul>
+                            <li>Mật khẩu, mã OTP, khóa API.</li>
+                            <li>CCCD, số tài khoản, hồ sơ y tế cá nhân.</li>
+                            <li>Hợp đồng mật, dữ liệu khách hàng chưa được phép chia sẻ.</li>
+                            <li>Thông tin nội bộ có thể ảnh hưởng công ty nếu lộ ra ngoài.</li>
+                        </ul>
+                    </div>
+                    <div class="privacy-card safe">
+                        <h3>Cách làm an toàn hơn</h3>
+                        <ul>
+                            <li>Ẩn tên thật: “Khách hàng A”, “Nhân viên B”.</li>
+                            <li>Xóa số điện thoại, email, địa chỉ, số tiền nhạy cảm.</li>
+                            <li>Chỉ đưa phần cần xử lý, không đưa toàn bộ dữ liệu.</li>
+                            <li>Dùng tài khoản doanh nghiệp nếu công ty có chính sách rõ.</li>
+                        </ul>
+                    </div>
+                </div>
+                <aside class="speaker-note">
+                    <strong>Gợi ý nói:</strong>
+                    “Thông tin không phù hợp để chia sẻ trong nhóm nội bộ rộng cũng không nên được dán nguyên văn vào AI công cộng.”
+                </aside>
+            </article>
+
+            <article id="slide-12" class="slide" data-slide>
+                <div class="section-heading">
+                    <p class="eyebrow">Quy trình vận hành</p>
+                    <h2>5 bước đề xuất khi đưa AI vào công việc hằng ngày.</h2>
+                </div>
+                <div class="workflow">
+                    <div class="workflow-step">
+                        <span>1</span>
+                        <strong>Nói rõ việc cần làm</strong>
+                        <p>Xác định rõ tác vụ: viết email, tóm tắt, so sánh, lập kế hoạch hoặc tạo bản nháp.</p>
+                    </div>
+                    <div class="workflow-step">
+                        <span>2</span>
+                        <strong>Đưa dữ liệu</strong>
+                        <p>Dán ghi chú, nội dung thô, yêu cầu, giới hạn, người nhận.</p>
+                    </div>
+                    <div class="workflow-step">
+                        <span>3</span>
+                        <strong>Yêu cầu định dạng</strong>
+                        <p>Bảng, bullet, checklist, email, kế hoạch 7 ngày, 3 phương án.</p>
+                    </div>
+                    <div class="workflow-step">
+                        <span>4</span>
+                        <strong>Yêu cầu sửa</strong>
+                        <p>Yêu cầu tinh chỉnh theo tiêu chí: ngắn hơn, rõ hơn, ít quảng cáo hơn, đúng giọng thương hiệu hơn.</p>
+                    </div>
+                    <div class="workflow-step">
+                        <span>5</span>
+                        <strong>Kiểm rồi mới dùng</strong>
+                        <p>Kiểm nguồn, kiểm số liệu, kiểm tone, kiểm thông tin nhạy cảm.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article id="slide-13" class="slide practice-slide" data-slide>
+                <div class="section-heading">
+                    <p class="eyebrow">Kịch bản triển khai nhanh</p>
+                    <h2>Gợi ý phiên thử nghiệm 15 phút cho đội ngũ nội bộ.</h2>
+                    <p>Mục tiêu là kiểm tra mức độ phù hợp của AI với một tình huống công việc cụ thể, trước khi áp dụng rộng hơn.</p>
+                </div>
+                <div class="practice-grid">
+                    <div class="practice-card">
+                        <span>Phút 1-3</span>
+                        <h3>Chọn công cụ thử nghiệm</h3>
+                        <p>Chọn một công cụ phù hợp với mục tiêu: ChatGPT, Gemini, Claude, Grok, DeepSeek hoặc Kimi.</p>
+                    </div>
+                    <div class="practice-card">
+                        <span>Phút 4-7</span>
+                        <h3>Tạo bản nháp đầu tiên</h3>
+                        <p>“Tóm tắt tài liệu sau thành 5 ý chính, nêu rủi ro và đề xuất 3 bước xử lý tiếp theo.”</p>
+                    </div>
+                    <div class="practice-card">
+                        <span>Phút 8-11</span>
+                        <h3>Tinh chỉnh theo tiêu chí</h3>
+                        <p>“Viết lại ngắn gọn hơn, giọng chuyên nghiệp hơn, phù hợp email nội bộ và có checklist hành động.”</p>
+                    </div>
+                    <div class="practice-card">
+                        <span>Phút 12-15</span>
+                        <h3>Chuyển thành quy trình</h3>
+                        <p>“Từ kết quả trên, tạo checklist triển khai gồm người phụ trách, đầu vào, đầu ra và bước kiểm duyệt.”</p>
+                    </div>
+                </div>
+            </article>
+
+            <article id="slide-14" class="slide" data-slide>
+                <div class="section-heading">
+                    <p class="eyebrow">Lỗi thường gặp</p>
+                    <h2>4 lỗi phổ biến làm giảm hiệu quả khi triển khai AI.</h2>
+                </div>
+                <div class="mistake-list">
+                    <div class="mistake">
+                        <strong>Hỏi quá chung</strong>
+                        <p>“Làm marketing sao cho tốt?” → nên đổi thành việc cụ thể, đối tượng cụ thể, đầu ra cụ thể.</p>
+                    </div>
+                    <div class="mistake">
+                        <strong>Tin ngay câu trả lời đầu tiên</strong>
+                        <p>Câu trả lời đầu thường chỉ là bản nháp. Cần yêu cầu chỉnh sửa, rút gọn, bổ sung rủi ro và tiêu chí kiểm duyệt.</p>
+                    </div>
+                    <div class="mistake">
+                        <strong>Không yêu cầu định dạng</strong>
+                        <p>Nếu muốn dễ đọc, hãy yêu cầu bảng, bullet, checklist hoặc từng bước.</p>
+                    </div>
+                    <div class="mistake">
+                        <strong>Không kiểm chứng</strong>
+                        <p>Giá, chính sách, luật, sức khỏe, tài chính phải mở nguồn chính thức hoặc hỏi chuyên gia.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article id="slide-15" class="slide closing-slide" data-slide>
+                <div class="section-heading">
+                    <p class="eyebrow">Kết luận</p>
+                    <h2>AI hiệu quả nhất khi giúp đội ngũ làm việc nhanh hơn, rõ hơn và vẫn kiểm soát được chất lượng.</h2>
+                </div>
+                <div class="closing-grid">
+                    <div class="closing-card">
+                        <strong>Nhớ 1 câu</strong>
+                        <p>AI hỗ trợ tạo bản nháp; quyết định cuối cùng vẫn thuộc về người phụ trách.</p>
+                    </div>
+                    <div class="closing-card">
+                        <strong>Nhớ 1 công thức</strong>
+                        <p>Vai trò + bối cảnh + mục tiêu + dữ liệu + định dạng + tiêu chí kiểm duyệt.</p>
+                    </div>
+                    <div class="closing-card">
+                        <strong>Nhớ 1 thói quen</strong>
+                        <p>Thông tin quan trọng phải kiểm nguồn trước khi dùng.</p>
+                    </div>
+                </div>
+                <div class="final-actions">
+                    <a class="primary" href="../">Mở dashboard so sánh AI</a>
+                    <button class="secondary" type="button" data-jump="slide-01">Quay lại đầu</button>
+                </div>
+            </article>
+
+            <article id="sources" class="slide sources-slide" data-slide>
+                <div class="section-heading">
+                    <p class="eyebrow">Dẫn chứng chính thức</p>
+                    <h2>Nguồn dùng để cập nhật nội dung deck này.</h2>
+                    <p>Cập nhật nội dung: 04/06/2026. Giá và giới hạn có thể thay đổi, nên mở lại link chính thức trước khi trình bày hoặc chốt ngân sách.</p>
+                </div>
+                <div class="source-list">
+                    <a href="https://help.openai.com/en/articles/9260256-chatgpt-capabilities-overview" target="_blank" rel="noreferrer">OpenAI Help - ChatGPT capabilities</a>
+                    <a href="https://help.openai.com/en/articles/11909943-gpt-53-and-gpt-54-in-chatgpt" target="_blank" rel="noreferrer">OpenAI Help - GPT-5.5 in ChatGPT</a>
+                    <a href="https://gemini.google/overview/?hl=en-US" target="_blank" rel="noreferrer">Google - Gemini app overview</a>
+                    <a href="https://support.claude.com/en/articles/11049762-choosing-a-claude-ai-plan" target="_blank" rel="noreferrer">Anthropic - Choosing a Claude plan</a>
+                    <a href="https://www.anthropic.com/news/introducing-claude" target="_blank" rel="noreferrer">Anthropic - Introducing Claude</a>
+                    <a href="https://x.ai/pricing" target="_blank" rel="noreferrer">xAI - Grok pricing</a>
+                    <a href="https://docs.x.ai/developers/models" target="_blank" rel="noreferrer">xAI Docs - Grok models</a>
+                    <a href="https://api-docs.deepseek.com/quick_start/pricing" target="_blank" rel="noreferrer">DeepSeek API Docs - Models & pricing</a>
+                    <a href="https://platform.kimi.ai/docs/pricing/chat-k26" target="_blank" rel="noreferrer">Kimi API Platform - Kimi K2.6 pricing</a>
+                    <a href="https://platform.kimi.ai/docs/introduction" target="_blank" rel="noreferrer">Kimi API Platform - Main concepts</a>
+                    <a href="https://www.alibabacloud.com/help/en/model-studio/model-pricing" target="_blank" rel="noreferrer">Alibaba Cloud - Qwen Model Studio pricing</a>
+                    <a href="https://mistral.ai/pricing/" target="_blank" rel="noreferrer">Mistral AI - Pricing</a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <div class="slide-controls" aria-label="Điều khiển slide">
+        <button id="prevSlide" type="button">Trước</button>
+        <span id="slideCounter">1 / 16</span>
+        <button id="nextSlide" type="button">Tiếp</button>
+    </div>
+
+    <script src="intro.js"></script>
+</body>
+</html>
