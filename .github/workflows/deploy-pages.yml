@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  pages: write
 
 concurrency:
   group: gh-pages
@@ -26,3 +27,32 @@ jobs:
           publish_dir: ./deploy_dist
           publish_branch: gh-pages
           force_orphan: true
+
+      - name: Enable Pages from gh-pages
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          set -e
+          body='{"source":{"branch":"gh-pages","path":"/"}}'
+          status=$(curl -sS -o /tmp/pages.json -w "%{http_code}" \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            "https://api.github.com/repos/${REPOSITORY}/pages")
+
+          if [ "$status" = "404" ]; then
+            curl -sS -f -X POST \
+              -H "Accept: application/vnd.github+json" \
+              -H "Authorization: Bearer ${GH_TOKEN}" \
+              -H "X-GitHub-Api-Version: 2022-11-28" \
+              -d "$body" \
+              "https://api.github.com/repos/${REPOSITORY}/pages" > /tmp/pages-create.json
+          else
+            curl -sS -f -X PUT \
+              -H "Accept: application/vnd.github+json" \
+              -H "Authorization: Bearer ${GH_TOKEN}" \
+              -H "X-GitHub-Api-Version: 2022-11-28" \
+              -d "$body" \
+              "https://api.github.com/repos/${REPOSITORY}/pages" > /tmp/pages-update.json
+          fi
